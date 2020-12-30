@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="dom.js"></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -31,11 +32,23 @@
 
       </div>
       <div class="form-detail">
-        <input type="text" placeholder="First Name ">
-        <input type="text" placeholder="Last Name">
-        <input type="text" placeholder="Email Address">
-        <input type="text" placeholder="Password">
-        <button>Claim your free trial </button>
+        <input id="cInput" type="text" placeholder="First Name ">
+        <div id="msj1" class="msj-error">
+          <p>First name cannot be empty</p>
+        </div>
+        <input id="cInput1" type="text" placeholder="Last Name">
+        <div id="msj2" class="msj-error">
+          <p>Lasta name cannot be empty</p>
+        </div>
+        <input id="cInput2" type="text" placeholder="Email Address">
+        <div id="msj3" class="msj-error">
+          <p>Looks like this is not on email</p>
+        </div>
+        <input id="cInput3" type="text" placeholder="Password">
+        <div id="msj4" class="msj-error">
+          <p>Password cannot be empty</p>
+        </div>
+        <button onclick="view()">Claim your free trial </button>
         <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
         
       </div>
